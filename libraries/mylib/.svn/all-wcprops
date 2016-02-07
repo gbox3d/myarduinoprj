@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/anatomy3d/!svn/ver/220/trunk/Arduino/libraries/mylib
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/anatomy3d/!svn/ver/220/trunk/Arduino/libraries/mylib/test.cpp
+END
+test.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/anatomy3d/!svn/ver/220/trunk/Arduino/libraries/mylib/test.h
+END
