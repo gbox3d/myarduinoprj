@@ -1,15 +1,16 @@
-// Copyright Benoit Blanchon 2014-2015
+// Copyright Benoit Blanchon 2014-2016
 // MIT License
 //
 // Arduino JSON library
 // https://github.com/bblanchon/ArduinoJson
+// If you like this project, please add a star!
 
 #ifndef ARDUINO
 
 #include "../../include/ArduinoJson/Arduino/Print.hpp"
 
-#include <math.h>   // for isnan() and isinf()
-#include <stdio.h>  // for sprintf()
+#include <stdio.h>
+#include <math.h>  // for isnan() and isinf()
 
 // only for GCC 4.9+
 #if defined(__GNUC__) && \
@@ -51,12 +52,6 @@ size_t Print::print(double value, int digits) {
     sprintf(tmp, "%.*f", digits, value);
   }
 
-  return print(tmp);
-}
-
-size_t Print::print(long value) {
-  char tmp[32];
-  sprintf(tmp, "%ld", value);
   return print(tmp);
 }
 

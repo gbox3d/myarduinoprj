@@ -35,7 +35,7 @@
     while(steps_left>0)
     {
         currentMillis = micros();
-        if(currentMillis-last_time>=1000)
+        if(currentMillis-last_time>=850)
         {
             stepper(1); 
             time=time+micros()-last_time;
@@ -47,7 +47,7 @@
     Serial.println(time);
     Serial.println("Wait...!");
     delay(2000);
-    Direction=!Direction; // ¹ÝÀü.
+    Direction=!Direction; //
     steps_left=4095;
  }
 

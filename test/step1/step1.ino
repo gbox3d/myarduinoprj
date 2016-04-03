@@ -35,7 +35,7 @@ void setup()
   pinMode(in4Pin,OUTPUT);
   
   Serial.begin(9600);
-  motor.setSpeed(30);
+  motor.setSpeed(255);
   
 }
 
@@ -44,6 +44,7 @@ void loop()
   if(Serial.available()) 
   {
     int steps = Serial.parseInt();
+    Serial.println(steps);
     motor.step(steps);
   }
 
